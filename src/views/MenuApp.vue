@@ -29,11 +29,11 @@
 
 <script setup>
 
-import Navbar from './components/menu/Navbar.vue';
-import MenuList from './components/menu/MenuList.vue';
-import ProductModal from './components/menu/ProductModal.vue';
-import OrderSection from './components/menu/OrderSection.vue';
-import Categories from './components/menu/Categories.vue';
+import Navbar from '../components/menu/Navbar.vue';
+import MenuList from '../components/menu/MenuList.vue';
+import ProductModal from '../components/menu/ProductModal.vue';
+import OrderSection from '../components/menu/OrderSection.vue';
+import Categories from '../components/menu/Categories.vue';
 import { ref } from 'vue';
 
 const categories = [

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import MenuApp from '../MenuApp.vue';
-import WorkersApp from '../WorkersApp.vue';
+import MenuApp from '../views/MenuApp.vue';
+import WorkersApp from '../views/WorkersApp.vue';
+ 
 
 const routes = [
   {
