@@ -24,8 +24,8 @@
 
 <script setup>
 import { ref } from 'vue';
-import OrderList from '../workers/OrderList.vue';
-import OrderDetails from '../workers/OrderDetails.vue';
+import OrderList from '../src/components/workers/OrderList.vue';
+import OrderDetails from '../src/components/workers/OrderDetails.vue';
 
 // Užsakymų sąrašas
 const orders = ref([

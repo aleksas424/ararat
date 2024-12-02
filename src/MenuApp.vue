@@ -28,6 +28,7 @@
 </template>
 
 <script setup>
+
 import Navbar from './components/menu/Navbar.vue';
 import MenuList from './components/menu/MenuList.vue';
 import ProductModal from './components/menu/ProductModal.vue';
