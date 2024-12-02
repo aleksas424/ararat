@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <!-- Navigacijos meniu -->
+    <nav>
+      <ul>
+        <li>
+          <router-link to="/menu">Menu</router-link>
+        </li>
+        <li>
+          <router-link to="/workers">Workers</router-link>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- Router vieta -->
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+/* Navigacijos meniu stilius */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem; /* Tarpas tarp elementų */
+}
+
+nav li {
+  margin: 0;
+}
+
+/* Nuorodų stilius */
+nav a {
+  text-decoration: none; /* Panaikina pabraukimą */
+  color: blue; /* Pagrindinė spalva */
+  transition: color 0.3s ease; /* Spalvos animacija */
+}
+
+nav a:hover {
+  color: darkblue; /* Spalvos pokytis užvedus pelės žymeklį */
+}
+
+nav a.router-link-active {
+  font-weight: bold; /* Paryškinimas aktyviai nuorodai */
+  color: green; /* Aktyvios nuorodos spalva */
 }
 </style>
